@@ -9,7 +9,7 @@ class SecAgent < Formula
   depends_on :macos
 
   def install
-    bin.install "sec-agent"
+    bin.install "sec" => "sec-agent"
     bin.install_symlink bin/"sec-agent" => "sec"
   end
 
