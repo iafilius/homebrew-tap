@@ -1,8 +1,8 @@
 class SecAgent < Formula
   desc "macOS Enclave-Bound Session Agent for Encrypted Secrets"
   homepage "https://github.com/iafilius/sec-agent"
-  url "https://github.com/iafilius/sec-agent/releases/download/v1.9.1/sec-agent_v1.9.1_darwin_arm64.tar.gz"
-  sha256 "99dae75aa28d318711028b004df938053f78958bbbf5de005af8be36ebd84003"
+  url "https://github.com/iafilius/sec-agent/releases/download/v1.9.2/sec-agent_v1.9.2_darwin_arm64.tar.gz"
+  sha256 "cb0d201c06eccc681046d98c3c76317508db6bafea3e0ff3bd9441d1dda9be3f"
   license "MIT"
 
   depends_on :macos
@@ -13,6 +13,6 @@ class SecAgent < Formula
   end
 
   test do
-    assert_match "v1.9.1", shell_output("#{bin}/sec-agent version")
+    assert_match "v1.9.2", shell_output("#{bin}/sec-agent version")
   end
 end
