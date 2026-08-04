@@ -14,6 +14,6 @@ class SecAgent < Formula
   end
 
   test do
-    assert_match "v2.2.0")
+    assert_match "v#{version}", shell_output("#{bin}/sec-agent version")
   end
 end
