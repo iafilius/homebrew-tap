@@ -1,9 +1,9 @@
 class SecAgent < Formula
   desc "macOS Enclave-Bound Session Agent for Encrypted Secrets"
   homepage "https://github.com/iafilius/sec-agent"
-  url "https://github.com/iafilius/sec-agent/releases/download/v2.4.3/sec-agent_v2.4.3_darwin_arm64.tar.gz"
-  version "2.4.3"
-  sha256 "d7f442b9b3e473ca7ee0bd6ac409d6f430bb21866b1bc6a8d43cea34bedcf90f"
+  url "https://github.com/iafilius/sec-agent/releases/download/v2.4.4/sec-agent_v2.4.4_darwin_arm64.tar.gz"
+  version "2.4.4"
+  sha256 "cbe1638cc298abfca819dd06bf93fdf7084f294943178ff6b5c24465809152b4"
   license "GPL-3.0-or-later"
 
   depends_on :macos
