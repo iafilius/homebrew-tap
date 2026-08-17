@@ -46,14 +46,14 @@ class AntigravityCreditResumer < Formula
     if which("antigravity-ide")
       begin
         system "antigravity-ide", "--install-extension", "#{opt_pkgshare}/antigravity-credit-resumer-#{version}.vsix", "--force"
-      rescue StandardError
+      rescue
         nil
       end
     end
     if which("code")
       begin
         system "code", "--install-extension", "#{opt_pkgshare}/antigravity-credit-resumer-#{version}.vsix", "--force"
-      rescue StandardError
+      rescue
         nil
       end
     end
