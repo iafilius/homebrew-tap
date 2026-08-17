@@ -14,6 +14,7 @@ brew tap iafilius/tap
 
 | Formula | Description | Installation Command |
 | :--- | :--- | :--- |
+| **`antigravity-credit-resumer`** | Auto-resumes Antigravity AI Cascades on credit refill and manages model switching | `brew install antigravity-credit-resumer` |
 | **`split-tunnel-monitor`** | Split-tunnel VPN multipath monitor for macOS (Zscaler, AnyConnect, GlobalProtect) | `brew install split-tunnel-monitor` |
 | **`sec-agent`** | macOS Enclave-Bound Session Agent for Encrypted Secrets | `brew install sec-agent` |
 
@@ -28,4 +29,4 @@ brew upgrade
 
 ## License
 
-All formulas and associated software are released under GPL-3.0-or-later unless otherwise specified.
+All formulas and associated software are released under open source licenses (MIT / GPL-3.0-or-later) unless otherwise specified.
