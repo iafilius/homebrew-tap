@@ -1,8 +1,7 @@
 class AntigravityCreditResumer < Formula
-  desc "Auto-resumes Antigravity AI Cascades on credit refill and manages model switching"
+  desc "Auto-resumes Antigravity AI Cascades on credit refill & switches models"
   homepage "https://github.com/iafilius/antigravity-credit-resumer"
   url "https://github.com/iafilius/antigravity-credit-resumer/releases/download/v0.5.0/antigravity-credit-resumer-0.5.0.vsix"
-  version "0.5.0"
   sha256 "a45b1dedfa14d0978254f40b6f049bf77f31e10893e625ee4d28984b6a96c019"
   license "MIT"
 
@@ -45,15 +44,23 @@ class AntigravityCreditResumer < Formula
 
   def post_install
     if which("antigravity-ide")
-      system "antigravity-ide", "--install-extension", "#{opt_pkgshare}/antigravity-credit-resumer-#{version}.vsix", "--force" rescue nil
+      begin
+        system "antigravity-ide", "--install-extension", "#{opt_pkgshare}/antigravity-credit-resumer-#{version}.vsix", "--force"
+      rescue StandardError
+        nil
+      end
     end
     if which("code")
-      system "code", "--install-extension", "#{opt_pkgshare}/antigravity-credit-resumer-#{version}.vsix", "--force" rescue nil
+      begin
+        system "code", "--install-extension", "#{opt_pkgshare}/antigravity-credit-resumer-#{version}.vsix", "--force"
+      rescue StandardError
+        nil
+      end
     end
   end
 
   test do
     assert_match "antigravity-credit-resumer v#{version}", shell_output("#{bin}/antigravity-credit-resumer version")
-    assert_predicate pkgshare/"antigravity-credit-resumer-#{version}.vsix", :exist?
+    assert_path_exists pkgshare/"antigravity-credit-resumer-#{version}.vsix"
   end
 end
