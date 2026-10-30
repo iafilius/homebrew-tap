@@ -1,8 +1,8 @@
 class AntigravityCreditResumer < Formula
   desc "Auto-resumes Antigravity AI Cascades on credit refill & switches models"
   homepage "https://github.com/iafilius/antigravity-credit-resumer"
-  url "https://github.com/iafilius/antigravity-credit-resumer/releases/download/v0.8.0/antigravity-credit-resumer-0.8.0.vsix"
-  sha256 "cafe56d42d5702f6d4b59d12529315453ee80d86c5914df8d8dfc5bae9d9859a"
+  url "https://github.com/iafilius/antigravity-credit-resumer/releases/download/v0.8.1/antigravity-credit-resumer-0.8.1.vsix"
+  sha256 "4a4e921f08f1d75f95a956c1cf289c3207058f4d20f1e98137acb2f0e50e6989"
   license "MIT"
 
   def install
